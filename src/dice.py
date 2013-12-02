@@ -21,6 +21,18 @@ class Die(object):
 			roll = random.randrange(0, self._max_roll)
 		return roll
 
-die = Die(6)
+class D6(Die):
+	'''
+	This class represents a D6 that can be rolled to generate a random
+	number between 1 and 6.
+	'''
+	
+	def __init__(self):
+		'''
+		Ctor - Initialises the D6.
+		'''
+		Die.__init__(self, 6)
+
+die = D6()
 result = die.roll()
 print(result)
