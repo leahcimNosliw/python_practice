@@ -10,5 +10,5 @@ def two_hoch_thirty_eight():
 	'''
 	return two_hoch_etwas(38)
 
-x = two_hoch_thirty_eight
+x = two_hoch_thirty_eight()
 print(x)
